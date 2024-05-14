@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             Pessoa("Steve Jobs", R.drawable.jobs)
         )
 
-        val listaCarro: List <Carro> = listOf(
+        val listaCarro: List<Carro> = listOf(
             Carro("Uno", R.drawable.fiatuno, "2010", "preto", "20.000"),
             Carro("Celta", R.drawable.gmcelta, "2008", "Prata", "15.000"),
             Carro("Fusca", R.drawable.vwfusca, "2000", "Brano", "8.000"),
@@ -36,8 +36,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         val listView: ListView = findViewById(R.id.lvPessoa)
-        listView.adapter = CarroAdapter(this,listaCarro,callback)
+        listView.adapter = CarroAdapter(this, listaCarro, callback)
 
+        val car : carr
 
     }
 }
