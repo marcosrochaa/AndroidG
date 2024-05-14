@@ -38,11 +38,8 @@ class MainActivity : AppCompatActivity() {
         val listView: ListView = findViewById(R.id.lvPessoa)
         listView.adapter = CarroAdapter(this, listaCarro, callback)
 
-        val var cradc sdadsc
-        sadasdc
-        asdfasddf
-        sedfasdf
-        fasdf
+        val vmorro
+
 
     }
 }
