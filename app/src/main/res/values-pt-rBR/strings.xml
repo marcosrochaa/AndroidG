@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aprendizado</string>
+    <string name="primordios_programacao">Portuguese</string>
+    <string name="linus_bio">Linus Benedict Torvalds (Helsínquia, 28 de dezembro de 1969) é um engenheiro de software, nascido na Finlândia e naturalizado estado-unidense em 2010, criador, e por muito tempo o desenvolvedor mais importante do núcleo Linux, sendo utilizado em importantes sistemas Linux, Android e Chrome OS. É também o criador do Git, sistema de controle de versão amplamente utilizado, e o aplicativo para planejamento e registro de mergulho, Subsurface.</string>
+    <string name="alan_bio">Alan Mathison Turing OBE FRS (23 de junho de 1912 - 7 de junho de 1954) foi um matemático, cientista da computação, lógico, criptanalista, filósofo e biólogo teórico inglês. Turing foi altamente influente no desenvolvimento da ciência da computação teórica, fornecendo uma formalização dos conceitos de algoritmo e computação com a máquina de Turing, que pode ser considerada um modelo de um computador de propósito geral. Ele é amplamente considerado o pai da ciência da computação teórica e da inteligência artificial.</string>
+</resources>
