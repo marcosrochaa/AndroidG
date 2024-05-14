@@ -56,6 +56,15 @@
         tools:text="Preço"
         app:layout_constraintTop_toBottomOf="@id/cor"/>
 
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TESTEEE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivCarro"
+        app:layout_constraintTop_toBottomOf="@id/cor"
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
