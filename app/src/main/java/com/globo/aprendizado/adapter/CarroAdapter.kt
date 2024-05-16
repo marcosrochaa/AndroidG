@@ -34,11 +34,17 @@ class CarroAdapter(
         tvCor.text = carro.color
         tvPreco.text = carro.preco
 
+
         itemView.setOnClickListener{
             callback.onCarroClick(carro)
         }
         return itemView
+
+
+        val botao = null
+        val bntDelete = botao
     }
+
 
 }
 

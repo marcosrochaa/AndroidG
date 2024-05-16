@@ -1,6 +1,8 @@
 package com.globo.aprendizado
 
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +12,7 @@ import com.globo.aprendizado.model.Carro
 import com.globo.aprendizado.model.Pessoa
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -36,10 +39,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         val listView: ListView = findViewById(R.id.lvPessoa)
-        listView.adapter = CarroAdapter(this, listaCarro, callback)
+        listView.adapter = CarroAdapter(this, listaCarro, callback
+        )
 
-        val cor =  ("")
 
+        val botao: Button = findViewById(R.id.btnDelete)
+        botao.setOnClickListener {
 
+            (listView.adapter as CarroAdapter).remove(Carro("",R.drawable.fiatuno,"","",""))
+
+            (listView.adapter as CarroAdapter).notifyDataSetChanged()
+            Toast.makeText(this@MainActivity, "Lista de carros excluída", Toast.LENGTH_SHORT).show()
+        }
     }
+
 }

@@ -6,4 +6,10 @@ data class Carro(
     val year: String,
     val color: String,
     val preco: String
-)
+) {
+    companion object {
+        fun notifyDataSetChanged() {
+            TODO("Not yet implemented")
+        }
+    }
+}

@@ -57,9 +57,10 @@
         app:layout_constraintTop_toBottomOf="@id/cor"/>
 
     <Button
+        android:id="@+id/btnDelete"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TESTEEE"
+        android:text="EXCLUIR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivCarro"
         app:layout_constraintTop_toBottomOf="@id/cor"
