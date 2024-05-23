@@ -16,7 +16,7 @@
 
     <TextView
         android:id="@+id/tvNome"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
 
@@ -32,18 +32,39 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivCarro"
-        tools:text="Ano"
-        app:layout_constraintTop_toBottomOf="@id/tvNome"/>
+        app:layout_constraintTop_toBottomOf="@id/tvNome"
+        tools:text="Ano" />
 
     <TextView
         android:id="@+id/cor"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivCarro"
-        tools:text="Cor"
-        app:layout_constraintTop_toBottomOf="@id/ano"/>
+        app:layout_constraintTop_toBottomOf="@id/ano"
+        tools:text="Cor" />
+
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="@id/cor"
+        app:layout_constraintStart_toEndOf="@id/cor"
+        app:layout_constraintTop_toTopOf="@id/cor"
+        app:tint="@color/black"/>
+
+    <ImageView
+        android:id="@+id/ivMarca"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvNome"
+        app:layout_constraintStart_toEndOf="@id/tvNome"
+        app:layout_constraintTop_toTopOf="@id/tvNome"
+        tools:src="@drawable/fiat" />
 
 
     <TextView
@@ -53,8 +74,8 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivCarro"
-        tools:text="Preço"
-        app:layout_constraintTop_toBottomOf="@id/cor"/>
+        app:layout_constraintTop_toBottomOf="@id/cor"
+        tools:text="Preço" />
 
     <Button
         android:id="@+id/btnDelete"
@@ -63,9 +84,7 @@
         android:text="EXCLUIR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivCarro"
-        app:layout_constraintTop_toBottomOf="@id/cor"
-        />
-
+        app:layout_constraintTop_toBottomOf="@id/preco" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
